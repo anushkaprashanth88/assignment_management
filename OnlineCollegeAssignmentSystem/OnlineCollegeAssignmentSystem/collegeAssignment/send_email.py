@@ -5,11 +5,11 @@ from sib_api_v3_sdk.rest import ApiException
 from pprint import pprint
 from .models import *
 
-SENDEREMAIL = "adhwaithaprashanth2003@gmail.com"
+SENDEREMAIL = "*****************"
 
 def sendmail(courseId, assignmentTitle, subjectObj, subDate):
     configuration = sib_api_v3_sdk.Configuration()
-    configuration.api_key['api-key'] = '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'
+    configuration.api_key['api-key'] = '***********************************'
     api_instance = sib_api_v3_sdk.TransactionalEmailsApi(sib_api_v3_sdk.ApiClient(configuration))
     html_content = "<html><body><h4>Check out new assignment of "+ subjectObj.SubjectFullname +" submission last date is "+ subDate +".</h4> <p>Thanks and regards<br>Online College assignment system.</p></body></html>"
 
